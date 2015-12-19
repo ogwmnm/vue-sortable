@@ -1,0 +1,29 @@
+{
+  "name": "vue-sortable",
+  "version": "0.0.0",
+  "description": "Sortable directive for vue.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ogwmnm/vue-sortable.git"
+  },
+  "keywords": [
+    "vue",
+    "sortable"
+  ],
+  "author": "Minami Ogawa <ogwmnm@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ogwmnm/vue-sortable/issues"
+  },
+  "homepage": "https://github.com/ogwmnm/vue-sortable#readme",
+  "dependencies": {
+    "sortablejs": "^1.4.2"
+  },
+  "devDependencies": {
+    "jshint": "^2.8.0"
+  }
+}
