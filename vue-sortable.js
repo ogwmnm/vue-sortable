@@ -8,15 +8,20 @@
   VueSortable.install = function( Vue ) {
     Vue.directive( "sortable", function( value ) {
       var vm = this.vm,
-          key = this.arg;
+          key = this.arg,
+          array = vm[ key ];
 
-      // TODO: deep copy
+      // TODO: need to copy deeply?
       value = value || {};
 
-      // TODO: bind all callbacks
-      value.onUpdate = function() {};
+      value.onUpdate = function( e ) {
+        var target = array[ e.oldIndex ];
+        array.$remove( target );
+        array.splice( e.newIndex, 0, target );
+        vm.$emit( "sort", target, e );
+      };
 
-      Sortable.create( this.el, value );
+      this.el.sortable = Sortable.create( this.el, value );
     });
   };
 

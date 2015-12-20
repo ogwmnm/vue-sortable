@@ -4,7 +4,7 @@
   "description": "Sortable directive for vue.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "http-server ."
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
     "sortablejs": "^1.4.2"
   },
   "devDependencies": {
+    "http-server": "^0.8.5",
     "jshint": "^2.8.0"
   }
 }
